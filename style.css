@@ -1,4 +1,10 @@
 
+*{
+	font-family: 'Chakra Petch', sans-serif;
+}
+.html{
+	background-color: forestgreen;
+}
 .calculator {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -7,13 +13,13 @@
 	max-width: 400px;
 	margin: 0 auto; /* Set left and right margins to auto */
 	padding: 10px;
-	background-color: white;
+	background-color: grey;
 	border-radius: 10px;
 	box-shadow: 0 0 20px #000;
 	font-size: 2em;
-	font-family: sans-serif;
+	
 	text-align: center;
-	color: #fff;
+	color: black;
 	position: absolute; /* Position the calculator */
 	top: 50%; /* Position the top edge of the calculator at the middle of the screen */
 	left: 50%; /* Position the left edge of the calculator at the middle of the screen */
@@ -21,7 +27,8 @@
 	padding-top: 30px;
 	border-style:solid;
 	border-color: black;
-  }
+	
+	}
   
   .img{
 	max-width: 290%;
@@ -33,7 +40,7 @@
   
   .display {
 	grid-column: 1 / span 4;
-	background-color: lightslategray;
+	background-color: white;
 	border-radius: 5px;
 	padding: 10px;
 	font-size: 2em;
@@ -41,7 +48,7 @@
 	border-style: solid;
 	border-color: black;
 	border-width: 3px;
-	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	
   }
   
   .button {
@@ -83,3 +90,46 @@
   #equals {
 	background-color: lightslategray;
   }
+  .nombre {
+	animation-name: example;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	font-size: 3em;
+	margin-top: 700px;
+	
+  }
+  
+  @keyframes example {
+	from {
+	  color: blue;
+	  transform: rotateY(30deg);
+	}
+	to {
+	  color: lightblue;
+	  transform: rotateY(360deg);
+	}
+  }
+  
+  
+  .casio {
+	animation-name: example1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	font-size: 3em;
+	margin-left: 880px;
+	margin-top: 100px;
+	offset-position:unset;
+  }
+  
+  @keyframes example1 {
+	from {
+	  color: blue;
+	  transform: rotateY(30deg);
+	  transform: rotateX(30deg);
+	}
+	to {
+	  color: lightblue;
+	  transform: rotateY(360deg);
+	}
+  }
+  
